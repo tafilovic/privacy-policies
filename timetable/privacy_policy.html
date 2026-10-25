@@ -20,23 +20,28 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
     <div class="translations-content-container">
       <div class="container">
         <div class="tab-content translations-content-item en visible" id="en">
-          <p>Last updated: October 21, 2026</p>
+          <p>Last updated: October 25, 2026</p>
           <p>This Privacy Policy describes how Tabak Development ("We", "Us" or "Our") collects, uses and shares
             information when You use the School timetable application for Android and iOS (the "Application"), and
             which rights You have.</p>
           <p>In short: the Application works without an account and then keeps all data on Your device only. If You
             sign in, Your timetables are stored on Our server so they can be synced between Your devices and shared
-            with people You invite. We do not show ads, do not sell data and do not use analytics or tracking.</p>
+            with people You invite. Plus is an optional paid upgrade bought through Google Play. We do not show ads,
+            do not sell data and do not use analytics or tracking.</p>
           <h1>Who is responsible</h1>
           <p>Tabak Development (Šemsudin Tafilović) is the controller of the personal data processed through the
             Application. Contact: <a href="mailto:tabakdevelopment@gmail.com">tabakdevelopment@gmail.com</a>.</p>
           <p>A parent who creates timetables for a child is responsible for the information they enter about the
             child; We process it on their behalf to provide the Application.</p>
+          <p>A teacher who keeps a class book in the Application (students and their grades) is responsible for
+            that data, together with their school where the school's rules apply. For this data We act as a
+            processor on the teacher's behalf: We store and sync it only so the teacher can use it, and nobody else
+            sees it.</p>
           <h1>Data We process</h1>
           <h2>Without an account</h2>
-          <p>Everything You enter – profiles, subjects, lessons, bell times, tests, homework and other events – is
-            stored only in the Application's database on Your device. We do not receive it. Reminders are planned
-            and shown by Your device.</p>
+          <p>Everything You enter – profiles, subjects, lessons, bell times, tests, homework and other events,
+            grades and the class book – is stored only in the Application's database on Your device. We do not
+            receive it. Reminders are planned and shown by Your device.</p>
           <h2>With an account (Google or email sign-in)</h2>
           <ul>
             <li>
@@ -50,12 +55,30 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
                 tests, homework and other events with their titles, dates, notes and reminder settings.</p>
             </li>
             <li>
+              <p><strong>Grades:</strong> grades You enter for a subject, with their weight, type, date and an
+                optional note.</p>
+            </li>
+            <li>
+              <p><strong>Class book (teacher timetables):</strong> names of the teacher's classes or groups, names,
+                roll numbers and optional notes of their students, and the grades the teacher gives them. The class
+                book is visible only to the teacher who owns the timetable – not to people the timetable is shared
+                with.</p>
+            </li>
+            <li>
+              <p><strong>Purchases:</strong> when You buy Plus, Google Play handles the payment. We receive from
+                Google Play the product, the purchase token, the order number, the purchase state and the start and
+                end dates, so We can confirm the purchase, unlock Plus on Your devices and react to renewals,
+                cancellations and refunds. We never see Your payment details. With Plus Family, the people who are
+                members of the buyer's timetables get Plus too, and the Application shows them the buyer's name.</p>
+            </li>
+            <li>
               <p><strong>Sharing data:</strong> who has access to which timetable and with which role, and invite
                 codes. Members of a shared timetable see each other's name or email address.</p>
             </li>
             <li>
               <p><strong>Device data:</strong> an installation ID, a push token (Firebase Cloud Messaging) so that
-                changes from family members reach Your device quickly, the platform and the app version.</p>
+                changes from family members reach Your device quickly, the platform, the app version and when the
+                account and the device were last active.</p>
             </li>
             <li>
               <p><strong>Technical logs:</strong> Our server keeps short-lived request logs (for example IP address,
@@ -68,7 +91,13 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
             <li><strong>Camera</strong> – only when You scan the QR code of an invite. Images are processed on Your
               device and not stored or sent.</li>
             <li><strong>Internet</strong> – to sync when You are signed in.</li>
+            <li><strong>Files</strong> – only a timetable file You choose to import or open with the Application.
+              No access to Your other files.</li>
           </ul>
+          <p><strong>Timetable files:</strong> when You share a timetable "for classmates", the Application creates a
+            file on Your device with the bell times, subjects and lessons (no grades, class book, names of family
+            members or account data) and hands it to the app You choose, for example a chat app. The file does not
+            pass through Our server.</p>
           <p>When You update from the previous version of the Application, it can read that version's timetable
             database on Your device to import Your timetables. The old data is not changed or sent anywhere unless
             You sign in.</p>
@@ -77,7 +106,11 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
             <li>To provide the Application: sign-in, storing and syncing Your timetables, sharing them with people
               You invite, and sending sync signals to Your devices (performance of the contract, Art. 6(1)(b)
               GDPR).</li>
-            <li>To keep the service secure and working (legitimate interest, Art. 6(1)(f) GDPR).</li>
+            <li>To sell and provide Plus: checking purchases with Google Play, unlocking Plus for You and Your Plus
+              Family, renewals, cancellations and refunds (performance of the contract, Art. 6(1)(b) GDPR), and
+              keeping purchase records as the law requires (legal obligation, Art. 6(1)(c) GDPR).</li>
+            <li>To keep the service secure and working, including seeing which app versions are still in use
+              (legitimate interest, Art. 6(1)(f) GDPR).</li>
           </ul>
           <p>We do not use the data for advertising, profiling or automated decisions.</p>
           <h1>Service providers</h1>
@@ -85,8 +118,8 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
           <ul>
             <li><strong>Supabase</strong> – database, sign-in and server functions, hosted in the European Union.
             </li>
-            <li><strong>Google</strong> – Google sign-in (if You choose it) and Firebase Cloud Messaging for sync
-              signals. Google may process data outside the European Union under appropriate safeguards (EU Standard
+            <li><strong>Google</strong> – Google sign-in (if You choose it), Google Play for purchases of Plus, and
+              Firebase Cloud Messaging for sync signals. Google may process data outside the European Union under appropriate safeguards (EU Standard
               Contractual Clauses).</li>
           </ul>
           <p>We do not sell, rent or share personal data with anyone else, except when required by law.</p>
@@ -95,8 +128,12 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
             <li>Data on Your device stays until You delete it in the Application (Settings → Delete all data) or
               uninstall it.</li>
             <li>Your account data is kept as long as Your account exists.</li>
+            <li>Purchase records are kept while needed to provide Plus and handle refunds, and as long as tax and
+              accounting laws require, even after the account is deleted. A subscription is managed in Google Play:
+              deleting the account does not cancel it – cancel it in Google Play.</li>
             <li><strong>Deleting Your account</strong> permanently deletes Your account and every timetable You
-              created, including their lessons and events, also for the people You shared them with. You lose access
+              created, including their lessons, events, grades and class book, also for the people You shared them
+              with. You lose access
               to timetables others shared with You; theirs stay with them. You can delete the account in the
               Application (account → Delete account) or request it on the <a href="delete_account.html">account
               deletion page</a>. Deletion is done within 30 days of a request by email; in the Application it is
@@ -110,13 +147,14 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
             delete data directly in the Application. For other requests write to <a
               href="mailto:tabakdevelopment@gmail.com">tabakdevelopment@gmail.com</a>.</p>
           <h1>Children</h1>
-          <p>The Application helps students, parents and teachers organise school. It contains no ads, no in-app
-            purchases and no chat. We collect only the data needed for the timetable – no birth dates, photos or
+          <p>The Application helps students, parents and teachers organise school. It contains no ads and no chat.
+            Plus is an optional purchase through Google Play; on a child's Google account, Google asks the parent to
+            approve it (Family Link). We collect only the data needed for the timetable – no birth dates, photos or
             location. A child's timetable is usually created and shared by a parent. If You are a parent and believe
             Your child gave Us personal data without Your consent, contact Us and We will delete it.</p>
           <h1>Security</h1>
           <p>Data is sent over encrypted connections (HTTPS). Access on the server is limited to the members of each
-            timetable. Sign-in tokens are kept in the secure storage of Your device. No method of storage or
+            timetable, and the class book to the timetable's owner. Sign-in tokens are kept in the secure storage of Your device. No method of storage or
             transmission is 100% secure, but We use commonly accepted measures to protect Your data.</p>
           <h1>Changes to this Privacy Policy</h1>
           <p>We may update this Privacy Policy. The current version is always on this page with its "Last updated"
