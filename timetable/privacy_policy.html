@@ -80,7 +80,9 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
             <li>
               <p><strong>Device data:</strong> an installation ID, a push token (Firebase Cloud Messaging) so that
                 changes from family members reach Your device quickly, the platform, the app version and when the
-                account and the device were last active.</p>
+                account and the device were last active. When You request a sign-in code, the Application also
+                sends a one-way hash of Your device's Android ID (not the ID itself) so that at most two codes per
+                hour can be requested from one device; it is used only for this limit and deleted after one day.</p>
             </li>
             <li>
               <p><strong>Technical logs:</strong> Our server keeps short-lived request logs (for example IP address,
@@ -111,7 +113,8 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
             <li>To sell and provide Plus: checking purchases with Google Play, unlocking Plus for You and Your Plus
               Family, renewals, cancellations and refunds (performance of the contract, Art. 6(1)(b) GDPR), and
               keeping purchase records as the law requires (legal obligation, Art. 6(1)(c) GDPR).</li>
-            <li>To keep the service secure and working, including seeing which app versions are still in use
+            <li>To keep the service secure and working, including seeing which app versions are still in use and
+              limiting how many sign-in codes can be requested per email address and device to prevent abuse
               (legitimate interest, Art. 6(1)(f) GDPR).</li>
           </ul>
           <p>We do not use the data for advertising, profiling or automated decisions.</p>
