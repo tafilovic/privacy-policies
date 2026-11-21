@@ -20,14 +20,15 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
     <div class="translations-content-container">
       <div class="container">
         <div class="tab-content translations-content-item en visible" id="en">
-          <p>Last updated: October 27, 2026</p>
+          <p>Last updated: November 22, 2026</p>
           <p>This Privacy Policy describes how Tabak Development ("We", "Us" or "Our") collects, uses and shares
             information when You use the School timetable application for Android and iOS (the "Application"), and
             which rights You have.</p>
           <p>In short: the Application works without an account and then keeps all data on Your device only. If You
             sign in, Your timetables are stored on Our server so they can be synced between Your devices and shared
-            with the members of Your Plus Family. Plus is an optional paid upgrade bought through Google Play. We do not show ads,
-            do not sell data and do not use analytics or tracking.</p>
+            with the members of Your Plus Family. Plus is an optional paid upgrade bought through Google Play. With
+            Plus You can fill in a timetable from a photo of a paper timetable: the photo is read once and not
+            stored. We do not show ads, do not sell data and do not use analytics or tracking.</p>
           <h1>Who is responsible</h1>
           <p>Tabak Development (Šemsudin Tafilović) is the controller of the personal data processed through the
             Application. Contact: <a href="mailto:tabakdevelopment@gmail.com">tabakdevelopment@gmail.com</a>.</p>
@@ -78,6 +79,22 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
                 timetable owner can choose who gets access.</p>
             </li>
             <li>
+              <p><strong>Timetable photos (Plus):</strong> when You fill in a timetable from a photo, the
+                Application first checks on Your device whether the photo is sharp and bright enough, shrinks it and
+                removes its metadata (such as location) before sending it. Our server sends the photo, together with
+                the names of the subjects already in the timetable, the app language and whether it is a student or teacher
+                timetable, to Anthropic, whose AI
+                service reads the lessons from it. Only the lessons that were read come back to the Application,
+                where You check them before saving. We do not store the photo: it is kept in the server's memory only
+                while it is being read and is never written to disk, a database or logs. Please photograph only
+                the timetable – not people or other personal documents.</p>
+            </li>
+            <li>
+              <p><strong>Photo scan counts:</strong> for each scan, its date and time, whether it worked and
+                whether it was made during a Plus trial – no photo and no result – so the monthly number of scans
+                included in Plus can be counted.</p>
+            </li>
+            <li>
               <p><strong>Device data:</strong> an installation ID, a push token (Firebase Cloud Messaging) so that
                 changes from family members reach Your device quickly, the platform, the app version and when the
                 account and the device were last active. When You request a sign-in code, the Application also
@@ -92,8 +109,11 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
           <h2>Permissions on Your device</h2>
           <ul>
             <li><strong>Notifications</strong> – to show reminders for tests, homework and other events.</li>
-            <li><strong>Camera</strong> – only when You scan the QR code of a Plus Family invite. Images are processed on Your
-              device and not stored or sent.</li>
+            <li><strong>Camera</strong> – only when You scan the QR code of a Plus Family invite, or take a photo of
+              a paper timetable. QR code images are processed on Your device and not stored or sent; a timetable
+              photo is sent only as described under "Timetable photos" and is not stored.</li>
+            <li><strong>Photos</strong> – only the one photo You choose to fill in a timetable from it, through Your
+              device's photo picker. No access to Your other photos.</li>
             <li><strong>Internet</strong> – to sync when You are signed in.</li>
             <li><strong>Files</strong> – only a timetable file You choose to import or open with the Application.
               No access to Your other files.</li>
@@ -113,6 +133,9 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
             <li>To sell and provide Plus: checking purchases with Google Play, unlocking Plus for You and Your Plus
               Family, renewals, cancellations and refunds (performance of the contract, Art. 6(1)(b) GDPR), and
               keeping purchase records as the law requires (legal obligation, Art. 6(1)(c) GDPR).</li>
+            <li>To read a timetable photo You send and to count the scans included in Plus (performance of the
+              contract, Art. 6(1)(b) GDPR). The AI service only turns the photo into lessons that You check and can
+              change; it makes no decisions about You.</li>
             <li>To keep the service secure and working, including seeing which app versions are still in use and
               limiting how many sign-in codes can be requested per email address and device to prevent abuse
               (legitimate interest, Art. 6(1)(f) GDPR).</li>
@@ -125,6 +148,10 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
               Germany, European Union.</li>
             <li><strong>Brevo (Sendinblue SAS)</strong> – sending the one-time sign-in codes by email, European
               Union.</li>
+            <li><strong>Anthropic, PBC</strong> – reading timetable photos with its AI service (Claude), USA. The
+              photo and the details listed under "Timetable photos" are sent only for this; Anthropic
+              does not use them to train its models and keeps them only for a limited period under its commercial
+              terms. The transfer outside the European Union is covered by the EU Standard Contractual Clauses.</li>
             <li><strong>Google</strong> – Google sign-in (if You choose it), Google Play for purchases of Plus,
               Firebase Cloud Messaging for sync signals, and storage of Our encrypted backups in Google Drive (Google
               cannot read their content). Google may process data outside the European Union under appropriate
@@ -149,6 +176,8 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
               deletion page</a>. Deletion is done within 30 days of a request by email; in the Application it is
               immediate.</li>
             <li>Signing out removes the account's data from the device; it stays in Your account.</li>
+            <li>Timetable photos are not stored by Us: each one is discarded as soon as it has been read.</li>
+            <li>Photo scan counts are deleted after 13 months, and with Your account.</li>
             <li>Technical logs are deleted automatically after a short period.</li>
           </ul>
           <h1>Your rights</h1>
@@ -159,8 +188,8 @@ body { background: #fff; color: #000; font-family: Helvetica Neue, Helvetica, Ar
           <h1>Children</h1>
           <p>The Application helps students, parents and teachers organise school. It contains no ads and no chat.
             Plus is an optional purchase through Google Play; on a child's Google account, Google asks the parent to
-            approve it (Family Link). We collect only the data needed for the timetable – no birth dates, photos or
-            location. A child's timetable is usually created and shared by a parent. If You are a parent and believe
+            approve it (Family Link). We collect only the data needed for the timetable – no birth dates, photos of
+            people or location; a photo of a paper timetable is read and not kept. A child's timetable is usually created and shared by a parent. If You are a parent and believe
             Your child gave Us personal data without Your consent, contact Us and We will delete it.</p>
           <h1>Security</h1>
           <p>Data is sent over encrypted connections (HTTPS). Access on the server is limited to the members of each
